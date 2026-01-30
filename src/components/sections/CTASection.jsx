@@ -9,7 +9,7 @@ export default function CTASection({ onGetAccess }) {
   ];
 
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section className="relative py-16 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-blueGray-950 via-carbon-950 to-blueGray-900" />
 
       <div className="absolute inset-0 opacity-20">
@@ -22,9 +22,9 @@ export default function CTASection({ onGetAccess }) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="space-y-8"
+          className="space-y-6"
         >
-          <ul className="space-y-3 mb-10 inline-block text-left">
+          <ul className="space-y-2 mb-6 inline-block text-left">
             {benefits.map((benefit, index) => (
               <motion.li
                 key={index}
@@ -56,7 +56,7 @@ export default function CTASection({ onGetAccess }) {
             <span className="text-gradient">Follow the Smart Money.</span>
           </h2>
 
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-3">
             <Button onClick={onGetAccess} className="text-2xl px-12 py-5">
               Get FREE Access Now
             </Button>

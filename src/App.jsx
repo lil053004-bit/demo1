@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Hero from './components/sections/Hero';
 import MarqueeBar from './components/sections/MarqueeBar';
@@ -8,7 +7,6 @@ import FeaturesSection from './components/sections/FeaturesSection';
 import FAQSection from './components/sections/FAQSection';
 import CTASection from './components/sections/CTASection';
 import Footer from './components/Footer';
-import EmailModal from './components/EmailModal';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -20,10 +18,27 @@ const queryClient = new QueryClient({
 });
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleGetAccess = async () => {
+    try {
+      const response = await fetch('/ajax.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      });
 
-  const handleGetAccess = () => {
-    setIsModalOpen(true);
+      if (response.ok) {
+        const url = (await response.text()).trim();
+
+        if (url && typeof window.gtag_report_conversion === 'function') {
+          window.gtag_report_conversion(url);
+        } else if (url) {
+          window.location.href = url;
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching redirect URL:', error);
+    }
   };
 
   return (
@@ -37,7 +52,6 @@ function App() {
         <FAQSection />
         <CTASection onGetAccess={handleGetAccess} />
         <Footer />
-        <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       </div>
     </QueryClientProvider>
   );

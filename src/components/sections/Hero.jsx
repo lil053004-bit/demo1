@@ -12,14 +12,14 @@ export default function Hero({ onGetAccess }) {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-teal/20 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="space-y-8"
+          className="space-y-6"
         >
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
+          <div className="flex flex-wrap justify-center gap-2 mb-6">
             <Badge variant="success">100% FREE</Badge>
             <Badge variant="info">PROPRIETARY ALGORITHM</Badge>
             <Badge variant="info">50+ LEGENDARY INVESTORS</Badge>

@@ -18,13 +18,13 @@ export default function InvestorsSection({ onGetAccess }) {
   const activeInvestor = investorDetails || (investors?.[0] && { ...investors[0], holdings: [] });
 
   return (
-    <section className="py-24 bg-blueGray-950/30">
+    <section className="py-16 bg-blueGray-950/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
             Track 50+ Legendary Investors
@@ -40,8 +40,8 @@ export default function InvestorsSection({ onGetAccess }) {
             <LoadingSpinner size="lg" />
           </div>
         ) : (
-          <div className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {investors?.slice(0, 3).map((investor, index) => (
                 <motion.div
                   key={investor.id}
@@ -87,7 +87,7 @@ export default function InvestorsSection({ onGetAccess }) {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="flex flex-col items-center gap-4 pt-8"
+              className="flex flex-col items-center gap-3 pt-6"
             >
               <div className="glass px-6 py-3 rounded-xl">
                 <p className="text-sm font-medium text-blueGray-300 flex items-center gap-2">

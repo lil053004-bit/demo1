@@ -9,14 +9,14 @@ export default function RankingSection({ onGetAccess }) {
   const { data: stocks, isLoading } = useStocksByRank(51, 55);
 
   return (
-    <section id="rankings" className="py-24 relative">
+    <section id="rankings" className="py-16 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <Badge variant="warning" className="mb-4">
             PROPRIETARY ALGORITHM
@@ -50,7 +50,7 @@ export default function RankingSection({ onGetAccess }) {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-12 space-y-4"
+          className="text-center mt-8 space-y-3"
         >
           <p className="text-lg text-blueGray-400 font-medium">
             Want to see ranks #1-50 and get daily updates?
