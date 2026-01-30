@@ -90,7 +90,7 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-accent-blue via-accent-teal to-accent-emerald bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-accent-blue via-accent-navy to-accent-steel bg-clip-text text-transparent;
   }
 
   .divider {

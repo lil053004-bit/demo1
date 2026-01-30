@@ -3,9 +3,9 @@ import Button from '../ui/Button';
 
 export default function CTASection({ onGetAccess }) {
   const benefits = [
-    'Get the SmartMoney Rank™ Top 50 Stock List',
-    'Unlock 50+ Legendary Investor Portfolios',
-    'Receive Instant SMS/Email Trade Alerts',
+    'Erhalten Sie die SmartMoney Rank™ Top 50 Aktien-Liste',
+    'Zugang zu 50+ legendären Investoren-Portfolios',
+    'Sofortige SMS/E-Mail Handelsbenachrichtigungen erhalten',
   ];
 
   return (
@@ -13,7 +13,7 @@ export default function CTASection({ onGetAccess }) {
       <div className="absolute inset-0 bg-gradient-to-br from-blueGray-950 via-carbon-950 to-blueGray-900" />
 
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 right-20 w-96 h-96 bg-accent-teal/30 rounded-full blur-3xl" />
+        <div className="absolute top-10 right-20 w-96 h-96 bg-accent-navy/30 rounded-full blur-3xl" />
         <div className="absolute bottom-10 left-20 w-96 h-96 bg-accent-blue/30 rounded-full blur-3xl" />
       </div>
 
@@ -51,17 +51,17 @@ export default function CTASection({ onGetAccess }) {
           </ul>
 
           <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-            Don&rsquo;t Trade Blindly.
+            Handeln Sie nicht blind.
             <br />
-            <span className="text-gradient">Follow the Smart Money.</span>
+            <span className="text-gradient">Folgen Sie dem Smart Money.</span>
           </h2>
 
           <div className="flex flex-col items-center gap-3">
             <Button onClick={onGetAccess} className="text-2xl px-12 py-5">
-              Get FREE Access Now
+              Jetzt KOSTENLOSEN Zugang erhalten
             </Button>
             <p className="text-sm font-medium text-blueGray-400">
-              No Hidden Fees • Cancel Anytime
+              Keine versteckten Gebühren • Jederzeit kündbar
             </p>
           </div>
         </motion.div>

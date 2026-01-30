@@ -4,23 +4,23 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-3">
           <p className="text-blueGray-400 text-sm">
-            &copy; {new Date().getFullYear()} SmartMoney Rank™. All rights reserved.
+            &copy; {new Date().getFullYear()} SmartMoney Rank™. Alle Rechte vorbehalten.
           </p>
           <p className="text-blueGray-500 text-sm">
-            Disclaimer: Data is for informational purposes only and is not investment advice.
+            Haftungsausschluss: Daten dienen nur zu Informationszwecken und stellen keine Anlageberatung dar.
           </p>
           <div className="flex justify-center gap-6 text-sm">
             <a
               href="#"
               className="text-blueGray-400 hover:text-accent-blue transition-colors duration-200"
             >
-              Terms of Service
+              Nutzungsbedingungen
             </a>
             <a
               href="#"
               className="text-blueGray-400 hover:text-accent-blue transition-colors duration-200"
             >
-              Privacy Policy
+              Datenschutzrichtlinie
             </a>
           </div>
         </div>

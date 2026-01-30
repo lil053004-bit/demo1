@@ -99,10 +99,10 @@ export default function EmailModal({ isOpen, onClose }) {
                   >
                     <div className="text-center mb-6">
                       <h3 className="text-2xl font-bold text-blueGray-100 mb-2">
-                        获取即时访问权限
+                        Sofortzugang erhalten
                       </h3>
                       <p className="text-blueGray-400">
-                        输入您的邮箱解锁完整的SmartMoney Rank™系统
+                        Geben Sie Ihre E-Mail-Adresse ein, um das vollständige SmartMoney Rank™-System freizuschalten
                       </p>
                     </div>
 
@@ -112,20 +112,20 @@ export default function EmailModal({ isOpen, onClose }) {
                           type="email"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          placeholder="your@email.com"
+                          placeholder="ihre@email.de"
                           required
                           className="input-glass"
                         />
                       </div>
 
                       <Button type="submit" className="w-full">
-                        立即免费获取
+                        Jetzt kostenlos erhalten
                       </Button>
 
                       <p className="text-xs text-center text-blueGray-500">
-                        注册即表示您同意接收更新和见解
+                        Mit der Anmeldung stimmen Sie zu, Updates und Einblicke zu erhalten
                         <br />
-                        无垃圾邮件，随时取消订阅
+                        Kein Spam, jederzeit abmelden
                       </p>
                     </form>
                   </motion.div>
@@ -147,7 +147,7 @@ export default function EmailModal({ isOpen, onClose }) {
                       transition={{ delay: 0.2 }}
                       className="text-blueGray-400 mt-6"
                     >
-                      正在处理您的请求...
+                      Ihre Anfrage wird verarbeitet...
                     </motion.p>
                     <motion.p
                       initial={{ opacity: 0 }}
@@ -155,7 +155,7 @@ export default function EmailModal({ isOpen, onClose }) {
                       transition={{ delay: 0.5 }}
                       className="text-blueGray-500 text-sm mt-2"
                     >
-                      准备为您解锁完整功能
+                      Bereite die vollständigen Funktionen für Sie vor
                     </motion.p>
                   </motion.div>
                 )}
@@ -186,7 +186,7 @@ export default function EmailModal({ isOpen, onClose }) {
                       transition={{ delay: 0.2 }}
                       className="text-3xl font-bold text-blueGray-100 mb-3"
                     >
-                      欢迎加入SmartMoney Rank™
+                      Willkommen bei SmartMoney Rank™
                     </motion.h3>
 
                     <motion.div
@@ -196,32 +196,32 @@ export default function EmailModal({ isOpen, onClose }) {
                       className="space-y-3 mb-8"
                     >
                       <p className="text-blueGray-300 text-lg">
-                        恭喜！您现在可以访问：
+                        Herzlichen Glückwunsch! Sie haben jetzt Zugang zu:
                       </p>
                       <div className="glass rounded-xl p-4 space-y-2 text-left">
                         <div className="flex items-start space-x-3">
                           <svg className="w-5 h-5 text-signal-success mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span className="text-blueGray-300 text-sm">完整的Top 50股票排名列表</span>
+                          <span className="text-blueGray-300 text-sm">Vollständige Top 50 Aktien-Ranking-Liste</span>
                         </div>
                         <div className="flex items-start space-x-3">
                           <svg className="w-5 h-5 text-signal-success mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span className="text-blueGray-300 text-sm">50+传奇投资者实时投资组合</span>
+                          <span className="text-blueGray-300 text-sm">50+ legendäre Investoren Echtzeit-Portfolios</span>
                         </div>
                         <div className="flex items-start space-x-3">
                           <svg className="w-5 h-5 text-signal-success mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span className="text-blueGray-300 text-sm">即时交易提醒与AI分析</span>
+                          <span className="text-blueGray-300 text-sm">Sofortige Handelsbenachrichtigungen & KI-Analyse</span>
                         </div>
                         <div className="flex items-start space-x-3">
                           <svg className="w-5 h-5 text-signal-success mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span className="text-blueGray-300 text-sm">免费电子书：像超级投资者一样投资</span>
+                          <span className="text-blueGray-300 text-sm">Kostenloses E-Book: Investieren wie ein Super-Investor</span>
                         </div>
                       </div>
                     </motion.div>
@@ -237,10 +237,10 @@ export default function EmailModal({ isOpen, onClose }) {
                         disabled={isRedirecting}
                         className="w-full text-lg py-4"
                       >
-                        {isRedirecting ? '正在跳转...' : '立即开始探索'}
+                        {isRedirecting ? 'Weiterleitung...' : 'Jetzt mit der Erkundung beginnen'}
                       </Button>
                       <p className="text-xs text-blueGray-500">
-                        访问确认邮件已发送至 <span className="text-accent-blue">{email}</span>
+                        Zugangsbestätigung wurde an <span className="text-accent-blue">{email}</span> gesendet
                       </p>
                     </motion.div>
                   </motion.div>

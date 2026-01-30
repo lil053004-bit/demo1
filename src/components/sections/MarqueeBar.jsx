@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 
 export default function MarqueeBar() {
   const updates = [
-    { investor: 'WARREN BUFFETT', action: 'New Holding in OXY', detail: '2M shares', type: 'buy' },
-    { investor: 'BILL ACKMAN', action: 'Reduced Position in CMG', detail: '150k shares', type: 'sell' },
-    { investor: 'MONISH PABRAI', action: 'Increased Value in MU', detail: '500k shares', type: 'buy' },
-    { investor: 'GEORGE SOROS', action: 'Sold Entire Stake in GOOGL', detail: '$100M value', type: 'sell' },
-    { investor: 'RAY DALIO', action: 'Increased Exposure to Gold', detail: '7% Portfolio', type: 'buy' },
+    { investor: 'WARREN BUFFETT', action: 'Neue Beteiligung in OXY', detail: '2M Aktien', type: 'buy' },
+    { investor: 'BILL ACKMAN', action: 'Position in CMG reduziert', detail: '150k Aktien', type: 'sell' },
+    { investor: 'MONISH PABRAI', action: 'Wert in MU erhöht', detail: '500k Aktien', type: 'buy' },
+    { investor: 'GEORGE SOROS', action: 'Gesamten Anteil in GOOGL verkauft', detail: '$100M Wert', type: 'sell' },
+    { investor: 'RAY DALIO', action: 'Gold-Exposition erhöht', detail: '7% Portfolio', type: 'buy' },
   ];
 
   return (

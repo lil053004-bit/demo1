@@ -19,14 +19,14 @@ export default function RankingSection({ onGetAccess }) {
           className="text-center mb-10"
         >
           <Badge variant="warning" className="mb-4">
-            PROPRIETARY ALGORITHM
+            PROPRIETÄRER ALGORITHMUS
           </Badge>
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            The SmartMoney Rank™ System
+            Das SmartMoney Rank™ System
           </h2>
           <p className="text-xl text-blueGray-400 max-w-3xl mx-auto">
-            We distill over 50 years of filings into a simple, daily-updated score,
-            highlighting stocks with the highest conviction from legendary investors.
+            Wir destillieren über 50 Jahre an Einreichungen in einen einfachen, täglich aktualisierten Score,
+            der Aktien mit der höchsten Überzeugung legendärer Investoren hervorhebt.
           </p>
         </motion.div>
 
@@ -53,10 +53,10 @@ export default function RankingSection({ onGetAccess }) {
           className="text-center mt-8 space-y-3"
         >
           <p className="text-lg text-blueGray-400 font-medium">
-            Want to see ranks #1-50 and get daily updates?
+            Möchten Sie die Ränge #1-50 sehen und tägliche Updates erhalten?
           </p>
           <Button onClick={onGetAccess} className="text-xl">
-            Unlock Full Rankings
+            Vollständige Rankings freischalten
             <svg className="w-5 h-5 ml-2 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
