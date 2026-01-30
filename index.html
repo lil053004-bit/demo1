@@ -7,6 +7,32 @@
   <title>SmartMoney Rank™ - Follow Billionaire Investors</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17451537206"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17451537206');
+    gtag('config', 'G-22CGE5N4MF');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'Add');
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17451537206/LYOVCPPx1cEbELamxYFB',
+        'transaction_id': '',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 </head>
 <body>
   <div id="root"></div>

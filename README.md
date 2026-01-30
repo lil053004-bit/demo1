@@ -18,6 +18,8 @@ This application embraces the **2026 Calm Design** trend for financial UIs:
 - **Real-time Updates**: Live data from Supabase with instant portfolio changes
 - **Responsive Design**: Mobile-first approach with seamless desktop experience
 - **Performance Optimized**: Code splitting, lazy loading, and efficient queries
+- **Conversion Tracking**: Google Analytics integration with conversion tracking and redirect functionality
+- **Multi-step Modal Flow**: Email capture → Loading state → Conversion confirmation with redirect
 
 ## 🛠 Tech Stack
 
@@ -140,6 +142,24 @@ All tables have Row Level Security (RLS) enabled with public read access.
 - Environment variables for sensitive data
 - No client-side secrets exposure
 - CORS properly configured
+
+## 📊 Analytics & Conversion Tracking
+
+The application includes Google Analytics and conversion tracking:
+
+- **Google Analytics**: Tracks page views and user behavior (ID: G-22CGE5N4MF)
+- **Google Ads Conversion**: Tracks conversion events (ID: AW-17451537206)
+- **Smart Redirect**: Fetches redirect URL from `ajax.php` after email submission
+- **Event Tracking**: 'Add' and 'conversion' events trigger on final CTA click
+
+For detailed setup instructions, see [ANALYTICS_SETUP.md](./ANALYTICS_SETUP.md)
+
+### Conversion Flow
+1. User enters email → Loading animation (2s)
+2. Conversion page displays with value proposition
+3. User clicks final CTA → Fetch redirect URL from ajax.php
+4. gtag_report_conversion() triggers with URL
+5. User redirects to destination page
 
 ## 📝 License
 
