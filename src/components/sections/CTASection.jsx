@@ -13,8 +13,8 @@ export default function CTASection({ onGetAccess }) {
       <div className="absolute inset-0 bg-gradient-to-br from-blueGray-950 via-carbon-950 to-blueGray-900" />
 
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 right-20 w-96 h-96 bg-accent-navy/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-10 left-20 w-96 h-96 bg-accent-blue/30 rounded-full blur-3xl" />
+        <div className="absolute top-10 right-20 w-96 h-96 bg-accent-jade/30 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 left-20 w-96 h-96 bg-accent-emerald/30 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -12,13 +12,13 @@ export default function Footer() {
           <div className="flex justify-center gap-6 text-sm">
             <a
               href="#"
-              className="text-blueGray-400 hover:text-accent-blue transition-colors duration-200"
+              className="text-blueGray-400 hover:text-accent-emerald transition-colors duration-200"
             >
               Nutzungsbedingungen
             </a>
             <a
               href="#"
-              className="text-blueGray-400 hover:text-accent-blue transition-colors duration-200"
+              className="text-blueGray-400 hover:text-accent-emerald transition-colors duration-200"
             >
               Datenschutzrichtlinie
             </a>

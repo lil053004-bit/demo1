@@ -57,7 +57,7 @@ export default function StockRankingTable({ stocks, showAll = false }) {
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   <div className="flex flex-col">
-                    <span className="text-sm font-semibold text-accent-blue group-hover:text-accent-teal transition-colors">
+                    <span className="text-sm font-semibold text-accent-emerald group-hover:text-accent-teal transition-colors">
                       {stock.ticker}
                     </span>
                     <span className="text-xs text-blueGray-500 hidden lg:block">

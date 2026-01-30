@@ -8,8 +8,8 @@ export default function Hero({ onGetAccess }) {
       <div className="absolute inset-0 bg-gradient-to-b from-blueGray-950 via-carbon-950 to-carbon-950" />
 
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-accent-blue/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-navy/20 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-accent-emerald/30 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-jade/20 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -61,7 +61,7 @@ export default function Hero({ onGetAccess }) {
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="w-2 h-2 bg-accent-blue rounded-full"
+              className="w-2 h-2 bg-accent-emerald rounded-full"
             />
             <span className="text-sm font-medium text-blueGray-300">
               Zeitlich begrenztes Angebot: Erhalten Sie 3 exklusive Bonus-Guides bei Ihrer Anmeldung heute

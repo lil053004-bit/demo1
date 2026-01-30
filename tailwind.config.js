@@ -31,14 +31,14 @@ export default {
           950: '#020617',
         },
         accent: {
-          blue: '#1E40AF',
-          navy: '#1E3A8A',
-          steel: '#3B5998',
+          emerald: '#10B981',
+          jade: '#059669',
+          teal: '#14B8A6',
         },
         signal: {
-          success: '#059669',
-          warning: '#D97706',
-          danger: '#DC2626',
+          success: '#10B981',
+          warning: '#F59E0B',
+          danger: '#EF4444',
         }
       },
       backdropBlur: {
@@ -70,8 +70,8 @@ export default {
       },
       boxShadow: {
         'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
-        'glow-sm': '0 0 10px rgba(59, 130, 246, 0.3)',
-        'glow-md': '0 0 20px rgba(59, 130, 246, 0.4)',
+        'glow-sm': '0 0 10px rgba(16, 185, 129, 0.3)',
+        'glow-md': '0 0 20px rgba(16, 185, 129, 0.4)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

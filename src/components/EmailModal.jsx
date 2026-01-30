@@ -173,9 +173,9 @@ export default function EmailModal({ isOpen, onClose }) {
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ type: 'spring', stiffness: 200, damping: 15, delay: 0.1 }}
-                      className="w-20 h-20 bg-gradient-to-br from-accent-blue/20 to-accent-teal/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-accent-blue/30"
+                      className="w-20 h-20 bg-gradient-to-br from-accent-emerald/20 to-accent-teal/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-accent-emerald/30"
                     >
-                      <svg className="w-10 h-10 text-accent-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-10 h-10 text-accent-emerald" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </motion.div>
@@ -240,7 +240,7 @@ export default function EmailModal({ isOpen, onClose }) {
                         {isRedirecting ? 'Weiterleitung...' : 'Jetzt mit der Erkundung beginnen'}
                       </Button>
                       <p className="text-xs text-blueGray-500">
-                        Zugangsbestätigung wurde an <span className="text-accent-blue">{email}</span> gesendet
+                        Zugangsbestätigung wurde an <span className="text-accent-emerald">{email}</span> gesendet
                       </p>
                     </motion.div>
                   </motion.div>

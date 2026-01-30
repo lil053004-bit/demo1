@@ -22,7 +22,7 @@ export default function InvestorCard({ investor, onSelect, isActive }) {
       <GlassCard
         className={`transition-all duration-300 ${
           isActive
-            ? 'ring-2 ring-accent-blue bg-blueGray-900/60'
+            ? 'ring-2 ring-accent-emerald bg-blueGray-900/60'
             : 'hover:bg-blueGray-900/50'
         }`}
         animate={false}
@@ -52,7 +52,7 @@ export default function InvestorCard({ investor, onSelect, isActive }) {
 
           {investor.quote && (
             <div className="pt-3 border-t border-blueGray-800/50">
-              <p className="text-sm text-accent-blue italic line-clamp-2">
+              <p className="text-sm text-accent-emerald italic line-clamp-2">
                 &ldquo;{investor.quote}&rdquo;
               </p>
             </div>

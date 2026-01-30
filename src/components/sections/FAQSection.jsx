@@ -91,7 +91,7 @@ export default function FAQSection() {
                     className="flex-shrink-0"
                   >
                     <svg
-                      className="w-6 h-6 text-accent-blue"
+                      className="w-6 h-6 text-accent-emerald"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"

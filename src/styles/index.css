@@ -47,9 +47,9 @@
   }
 
   .btn-primary {
-    @apply px-6 py-3 rounded-xl font-semibold text-white bg-accent-blue/90 backdrop-blur-sm
-           border border-accent-blue/30 transition-all duration-300
-           hover:bg-accent-blue hover:shadow-glow-md hover:-translate-y-0.5
+    @apply px-6 py-3 rounded-xl font-semibold text-white bg-accent-emerald/90 backdrop-blur-sm
+           border border-accent-emerald/30 transition-all duration-300
+           hover:bg-accent-emerald hover:shadow-glow-md hover:-translate-y-0.5
            active:translate-y-0;
   }
 
@@ -69,7 +69,7 @@
   .input-glass {
     @apply w-full px-4 py-3 rounded-xl glass text-blueGray-200
            placeholder-blueGray-600 focus:outline-none focus:ring-2
-           focus:ring-accent-blue/50 focus:border-accent-blue/50
+           focus:ring-accent-emerald/50 focus:border-accent-emerald/50
            transition-all duration-300;
   }
 
@@ -86,11 +86,11 @@
   }
 
   .badge-info {
-    @apply badge bg-accent-blue/20 text-accent-blue border border-accent-blue/30;
+    @apply badge bg-accent-emerald/20 text-accent-emerald border border-accent-emerald/30;
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-emerald-400 via-emerald-500 to-teal-500 bg-clip-text text-transparent;
   }
 
   .divider {
@@ -116,7 +116,7 @@
     background: linear-gradient(
       90deg,
       transparent 0%,
-      rgba(59, 130, 246, 0.1) 50%,
+      rgba(16, 185, 129, 0.1) 50%,
       transparent 100%
     );
     background-size: 200% 100%;
@@ -138,5 +138,5 @@
 }
 
 ::selection {
-  @apply bg-accent-blue/30 text-blueGray-100;
+  @apply bg-accent-emerald/30 text-blueGray-100;
 }

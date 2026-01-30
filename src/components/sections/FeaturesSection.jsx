@@ -86,7 +86,7 @@ export default function FeaturesSection({ onGetAccess }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           {features.map((feature, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
-              <div className="text-accent-blue mb-4">{feature.icon}</div>
+              <div className="text-accent-emerald mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold mb-3 text-blueGray-100">
                 {feature.title}
               </h3>
